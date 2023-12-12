@@ -31,14 +31,14 @@ namespace P04WeatherForecastWPF.Client.Services
             }
         }
 
-        public async Task<Weather[]> GetCurentConditions(string cityKey)
+        public async Task<Weather> GetCurentConditions(string cityKey)
         {
             string url = base_url + "/" + string.Format(current_conditions_endpoint,cityKey, api_key, language);
             using (HttpClient clinet = new HttpClient())
             {
                 var response = await clinet.GetAsync(url);
                 string json = await response.Content.ReadAsStringAsync();
-                Weather[] weathers = JsonConvert.DeserializeObject<Weather[]>(json);
+                Weather weathers = JsonConvert.DeserializeObject<Weather>(json);
                 return weathers;
             }
         }

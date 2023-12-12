@@ -37,5 +37,16 @@ namespace P04WeatherForecastWPF.Client
 
 
         }
+
+        private async void lbData_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var selectedCity = (City)lbData.SelectedItem;
+            if (selectedCity != null)
+            {
+                var weather = await accuWeatherService.GetCurentConditions(selectedCity.Key);
+                lblCityName.Content = selectedCity.LocalizedName;
+                double tempValue = weather.Temperature.Metric.Value;
+            }
+        }
     }
 }

@@ -8,11 +8,18 @@
         Title="MainWindow" Height="200" Width="300">
 
     <DockPanel>
-        <StackPanel>
+        <StackPanel Width="150" DockPanel.Dock="Left">
             <Label Content="City:"></Label>
             <TextBox x:Name="txtCity"></TextBox>
             <Button x:Name="btnSearch" Content="Search" Click="btnSearch_Click"></Button>
-            <ListBox DisplayMemberPath="LocalizedName" x:Name="lbData"></ListBox>
+            <ListBox DisplayMemberPath="LocalizedName" x:Name="lbData" SelectionChanged="lbData_SelectionChanged"></ListBox>
+        </StackPanel>
+        <StackPanel>
+            <Label HorizontalAlignment="Center" Content="Temperature for City:"></Label>
+            <Label x:Name="lblCityName" HorizontalAlignment="Center" Content="..."></Label>
+            <Label HorizontalAlignment="Center" Content="is:"></Label>
+            <Label x:Name="lblTemperatureValue" HorizontalAlignment="Center" Content="..."></Label>
+
         </StackPanel>
     </DockPanel>
 </Window>
