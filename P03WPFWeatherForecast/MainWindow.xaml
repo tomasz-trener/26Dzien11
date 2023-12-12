@@ -1,0 +1,25 @@
+﻿<Window x:Class="P03WPFWeatherForecast.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P03WPFWeatherForecast"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Button x:Name="btnGetTemperature" Grid.Column="0" Content="Podaj temperature"  Click="btnGetTemperature_Click"/>
+        <TextBlock x:Name="tbTemperature" Grid.Column="1"></TextBlock>
+        <TextBox x:Name="txtCity" Grid.Row="1" ></TextBox>
+        <Image Grid.Column="1" Grid.Row="1"></Image> <!--komentarz-->
+    </Grid>
+</Window>

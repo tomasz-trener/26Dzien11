@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Podsumowanie.txt = Podsumowanie.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03WPFWeatherForecast", "P03WPFWeatherForecast\P03WPFWeatherForecast.csproj", "{17866E3E-CC2B-4CEF-970A-307706910087}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{F2AB94B3-56B8-4D7E-AE83-7D1123854D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2AB94B3-56B8-4D7E-AE83-7D1123854D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2AB94B3-56B8-4D7E-AE83-7D1123854D5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17866E3E-CC2B-4CEF-970A-307706910087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17866E3E-CC2B-4CEF-970A-307706910087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17866E3E-CC2B-4CEF-970A-307706910087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17866E3E-CC2B-4CEF-970A-307706910087}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
