@@ -39,3 +39,5 @@ ala ma kota i 33 psy
 
  - obrazki 
   - build action: content i copy to output durectory na: copy always 
+
+  6) Tym rzem uzyjemy gotowego API zeby pobrac temperature 
