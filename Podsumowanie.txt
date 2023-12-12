@@ -23,3 +23,19 @@ ala ma kota i 33 psy
 <div class="BNeawe iBp4i AP7Wnd">5�C</div>
 <div class="BNeawe iBp4i AP7Wnd">-5GC</div>
 <div class="BNeawe iBp4i AP7Wnd">-15�C</div>
+
+4) poznalismy rozne sposoby wywolywaniwa metod asynchronicznych 
+
+5) zapoaznanie sie z kontenerami i stylami w aplikacji WPF 
+
+- style dla formularza 
+- style dla aplikacji 
+
+
+- kontenery: 
+ - Grid - widok siatki
+ - StackPanel - ulozenie obok siebie 
+ - DockPanel - Przypinanie magnesem 
+
+ - obrazki 
+  - build action: content i copy to output durectory na: copy always 

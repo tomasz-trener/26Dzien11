@@ -6,31 +6,60 @@
         xmlns:local="clr-namespace:P03WPFWeatherForecast"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
 
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition ></ColumnDefinition>
-            <ColumnDefinition ></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
-
-        <StackPanel Orientation="Vertical" Grid.Column="0" >
-            <Button x:Name="btnGetTemperature" Content="Podaj temperature (Metoda synchroniczna)" Click="btnGetTemperature_Click"/>
-            <Button x:Name="btnGetTemperatureAsync1" Content="Podaj temperature (Metoda asynchroniczna 1)" Click="btnGetTemperatureAsync1_Click"/>
-            <Button x:Name="btnGetTemperatureAsync2" Content="Podaj temperature (Metoda asynchroniczna 2)" Click="btnGetTemperatureAsync2_Click"/>
-            <Button x:Name="btnGetTemperatureAsync3" Content="Podaj temperature (Metoda asynchroniczna 3)" Click="btnGetTemperatureAsync3_Click"/>
-            <Button x:Name="btnGetTemperatureAsync4" Content="Podaj temperature (Metoda asynchroniczna 4)" Click="btnGetTemperatureAsync4_Click"/>
-            <Button x:Name="btnGetTemperatureAsync5" Content="Podaj temperature (Metoda asynchroniczna 5)" Click="btnGetTemperatureAsync5_Click"/>
-            <Button x:Name="btnGetTemperatureAsync6" Content="Podaj temperature (Metoda asynchroniczna 6)" Click="btnGetTemperatureAsync6_Click"/>
-            <ProgressBar x:Name="pbProgresss" Height="20"></ProgressBar>
-        </StackPanel>
-       
+        <Style x:Key="MyButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="LightGreen"></Setter>
+            <Setter Property="Foreground" Value="DarkGreen"></Setter>
+            <Setter Property="FontSize" Value="18"></Setter>
+            <Setter Property="Margin" Value="6"></Setter>
+            <Setter Property="Padding" Value="5"></Setter>
+        </Style>
         
-        <TextBlock x:Name="tbTemperature" Grid.Column="1"></TextBlock>
-        <TextBox AcceptsReturn="True" x:Name="txtCity" Grid.Row="1" ></TextBox>
-        <ListView x:Name="lvLogger" Grid.Column="1" Grid.Row="1"></ListView> <!--komentarz-->
-    </Grid>
+    </Window.Resources>
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="New"></MenuItem>
+                <MenuItem Header="Open"></MenuItem>
+                <MenuItem Header="Save"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Copy"></MenuItem>
+                <MenuItem Header="Paste"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Image Width="100"  DockPanel.Dock="Left" Source="Images/Logo.png">
+        </Image>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" ></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="11*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Vertical" Grid.Column="0" >
+                <Button x:Name="btnGetTemperature" Content="Podaj temperature (Metoda synchroniczna)" Click="btnGetTemperature_Click"/>
+                <Button x:Name="btnGetTemperatureAsync1" Content="Podaj temperature (Metoda asynchroniczna 1)" Click="btnGetTemperatureAsync1_Click"/>
+                <Button x:Name="btnGetTemperatureAsync2" Content="Podaj temperature (Metoda asynchroniczna 2)" Click="btnGetTemperatureAsync2_Click"/>
+                <Button x:Name="btnGetTemperatureAsync3" Content="Podaj temperature (Metoda asynchroniczna 3)" Click="btnGetTemperatureAsync3_Click"/>
+                <Button Style="{StaticResource MyButtonStyle}" x:Name="btnGetTemperatureAsync4" Content="Podaj temperature (Metoda asynchroniczna 4)" Click="btnGetTemperatureAsync4_Click"/>
+                <Button Style="{StaticResource MyButtonStyle}" x:Name="btnGetTemperatureAsync5" Content="Podaj temperature (Metoda asynchroniczna 5)" Click="btnGetTemperatureAsync5_Click"/>
+                <Button Style="{StaticResource MyButtonStyle}" x:Name="btnGetTemperatureAsync6" Content="Podaj temperature (Metoda asynchroniczna 6)" Click="btnGetTemperatureAsync6_Click"/>
+                <ProgressBar x:Name="pbProgresss" Height="20"></ProgressBar>
+            </StackPanel>
+
+
+            <TextBlock x:Name="tbTemperature" Grid.Column="1"></TextBlock>
+            <TextBox AcceptsReturn="True" x:Name="txtCity" Grid.Row="1" ></TextBox>
+            <ListView x:Name="lvLogger" Grid.Column="1" Grid.Row="1"></ListView>
+            <!--komentarz-->
+        </Grid>
+    </DockPanel>
+    
+   
 </Window>
