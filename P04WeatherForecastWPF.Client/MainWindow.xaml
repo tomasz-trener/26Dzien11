@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P04WeatherForecastWPF.Client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="200" Width="300">
 
-    </Grid>
+    <DockPanel>
+        <StackPanel>
+            <Label Content="City:"></Label>
+            <TextBox x:Name="txtCity"></TextBox>
+            <Button x:Name="btnSearch" Content="Search" Click="btnSearch_Click"></Button>
+            <ListBox x:Name="lbData"></ListBox>
+        </StackPanel>
+    </DockPanel>
 </Window>

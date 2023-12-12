@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using P04WeatherForecastWPF.Client.Services;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,9 +17,16 @@ namespace P04WeatherForecastWPF.Client
     /// </summary>
     public partial class MainWindow : Window
     {
+        AccuWeatherService accuWeatherService;
         public MainWindow()
         {
             InitializeComponent();
+            accuWeatherService = new AccuWeatherService();
+        }
+
+        private async void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
