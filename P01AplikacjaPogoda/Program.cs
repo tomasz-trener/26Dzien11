@@ -6,6 +6,9 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
+
+//https://github.com/tomasz-trener/26Dzien11
+
 namespace P01AplikacjaPogoda
 {
     internal class Program

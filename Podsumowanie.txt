@@ -1,0 +1,18 @@
+﻿dotnet new console -n {nazwa}
+dotnet build - budowanie
+dotnet run - uruchomienie aplikacji
+dotnet new sln -n Dzien11 - utworzenie nowej solucji 
+dotnet sln add nowaAPlikacja\nowaAPlikacja.csproj
+
+ala ma .{4} i \d{1,2} psy
+
+ala ma kota i 2 psy
+ala ma kota i 4 psy
+ala ma kota i 33 psy
+
+
+<div class="BNeawe iBp4i AP7Wnd">(-{0,1}\d{1,3}).[CF]<\/div>
+
+<div class="BNeawe iBp4i AP7Wnd">5�C</div>
+<div class="BNeawe iBp4i AP7Wnd">-5GC</div>
+<div class="BNeawe iBp4i AP7Wnd">-15�C</div>
