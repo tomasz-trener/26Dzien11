@@ -21,17 +21,19 @@ namespace P04WeatherForecastWPF.Client.Services
 
         // private const string language = "pl";
         private string language; // teraz to zzmienna  
-        private const string api_key = "hjL55jHARudyfE7JBk4GwGhZO6szC3Qj";
-
+        //private const string api_key = "hjL55jHARudyfE7JBk4GwGhZO6szC3Qj";
+        private string api_key;
 
         public AccuWeatherService()
         {
             var builder = new ConfigurationBuilder()
+                .AddUserSecrets<App>()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json");
 
             var configuration = builder.Build();
             language = configuration["default_language"];
+            api_key = configuration["api_key"];
         }
 
         public async Task<City[]> GetLocations(string locationName)
