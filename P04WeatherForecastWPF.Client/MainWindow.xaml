@@ -12,7 +12,7 @@
             <Label Content="City:"></Label>
             <TextBox x:Name="txtCity"></TextBox>
             <Button x:Name="btnSearch" Content="Search" Click="btnSearch_Click"></Button>
-            <ListBox DisplayMemberPath="LocalizedName" x:Name="lbData" SelectionChanged="lbData_SelectionChanged"></ListBox>
+            <ListBox DisplayMemberPath="FullName" x:Name="lbData" SelectionChanged="lbData_SelectionChanged"></ListBox>
         </StackPanel>
         <StackPanel>
             <Label HorizontalAlignment="Center" Content="Temperature for City:"></Label>

@@ -41,3 +41,10 @@ ala ma kota i 33 psy
   - build action: content i copy to output durectory na: copy always 
 
   6) Tym rzem uzyjemy gotowego API zeby pobrac temperature 
+
+  - stworzenie konta w accuweather 
+  - wygenerowanie klucza 
+  - przetestowanie API z poziomu przegladrki i przeczytanie dokumentacji API 
+  - automatyczne wygenerowanie klas z json do c# s
+  - stworzenie serwisu obslugujacego endpointy 
+  - oblusga UI 
