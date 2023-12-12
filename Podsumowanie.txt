@@ -1,8 +1,15 @@
-﻿dotnet new console -n {nazwa}
+﻿
+1) Podczas migracji Net framework do net CORE - moga nie wzystkie klasy dzilalac tak samo! 
+
+2) Zarzdzac projektem mozmy z poziomu CLI
+
+dotnet new console -n {nazwa}
 dotnet build - budowanie
 dotnet run - uruchomienie aplikacji
 dotnet new sln -n Dzien11 - utworzenie nowej solucji 
 dotnet sln add nowaAPlikacja\nowaAPlikacja.csproj
+
+3) zmodyfikowalismy projekt tak aby korzystal z regex 
 
 ala ma .{4} i \d{1,2} psy
 
