@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P03WPFWeatherForecast"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="750" Width="900">
     <Window.Resources>
 
         <Style x:Key="MyButtonStyle" TargetType="Button">
@@ -38,7 +38,8 @@
                 <ColumnDefinition ></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="11*"></RowDefinition>
+                <!--<RowDefinition Height="11*"></RowDefinition>-->
+                <RowDefinition Height="380"></RowDefinition>
                 <RowDefinition Height="2*"></RowDefinition>
             </Grid.RowDefinitions>
 
