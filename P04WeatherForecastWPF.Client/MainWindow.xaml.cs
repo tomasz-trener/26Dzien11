@@ -46,6 +46,7 @@ namespace P04WeatherForecastWPF.Client
                 var weather = await accuWeatherService.GetCurentConditions(selectedCity.Key);
                 lblCityName.Content = selectedCity.LocalizedName;
                 double tempValue = weather.Temperature.Metric.Value;
+                lblTemperatureValue.Content = Convert.ToInt32(tempValue);
             }
         }
     }

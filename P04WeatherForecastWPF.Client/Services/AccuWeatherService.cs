@@ -38,8 +38,8 @@ namespace P04WeatherForecastWPF.Client.Services
             {
                 var response = await clinet.GetAsync(url);
                 string json = await response.Content.ReadAsStringAsync();
-                Weather weathers = JsonConvert.DeserializeObject<Weather>(json);
-                return weathers;
+                Weather[] weathers = JsonConvert.DeserializeObject<Weather[]>(json);
+                return weathers.FirstOrDefault();
             }
         }
 
