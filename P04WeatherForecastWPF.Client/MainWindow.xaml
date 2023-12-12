@@ -12,7 +12,7 @@
             <Label Content="City:"></Label>
             <TextBox x:Name="txtCity"></TextBox>
             <Button x:Name="btnSearch" Content="Search" Click="btnSearch_Click"></Button>
-            <ListBox x:Name="lbData"></ListBox>
+            <ListBox DisplayMemberPath="LocalizedName" x:Name="lbData"></ListBox>
         </StackPanel>
     </DockPanel>
 </Window>
